@@ -30,7 +30,7 @@ export default class Loan {
     }
 }
 
-type LoanType = {
+export type LoanType = {
     type: 'PERSONAL' | 'GUARANTEED' | 'CONSIGNMENT',
     interest_rate: number
 }

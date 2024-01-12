@@ -25,5 +25,8 @@ type Input = {
 
 type Output = {
     customer: string,
-    loans: any[]
+    loans: Array<{
+        type: 'PERSONAL' | 'GUARANTEED' | 'CONSIGNMENT',
+        interest_rate: number
+    }>
 }
